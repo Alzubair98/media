@@ -2,7 +2,7 @@ import UsersList from "./cmponents/UsersList";
 
 function App() {
   return (
-    <div>
+    <div className="container mx-auto">
       <UsersList />
     </div>
   );
