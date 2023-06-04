@@ -9,7 +9,7 @@ const usersSlice = createSlice({
     error: null,
   },
   extrarReducers(builder) {
-    builder.addCase(fetchUsers.pending, (state, action) => {
+    builder.addCase(fetchUsers.pending, (state) => {
       state.isLoading = true;
     });
     builder.addCase(fetchUsers.fulfilled, (state, action) => {
@@ -17,7 +17,7 @@ const usersSlice = createSlice({
       state.data = action.paylod;
     });
     builder.addCase(fetchUsers.rejected, (state, action) => {
-      state.error = action.paylod;
+      state.error = action.error;
     });
   },
 });
