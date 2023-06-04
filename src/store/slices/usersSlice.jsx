@@ -10,7 +10,7 @@ const usersSlice = createSlice({
   },
 
   extraReducers(builder) {
-    builder.addCase(fetchUsers.pending, (state, action) => {
+    builder.addCase(fetchUsers.pending, (state) => {
       state.isLoading = true;
     });
     builder.addCase(fetchUsers.fulfilled, (state, action) => {
