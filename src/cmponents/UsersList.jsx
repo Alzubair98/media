@@ -15,7 +15,7 @@ const UsersList = () => {
   }, [dispatch]);
 
   if (isLoading) {
-    return <Skeletion times={6} />;
+    return <Skeletion times={6} className="h-10 w-full" />;
   }
 
   if (error) {

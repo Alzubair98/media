@@ -1,12 +1,13 @@
 import classNames from "classnames";
 
-const Skeletion = ({ times }) => {
+const Skeletion = ({ times, className }) => {
   const outerCassNames = classNames(
     "relative",
     "overflow-hidden",
     "bg-gray-200",
     "mb-2.5",
-    "rounded"
+    "rounded",
+    className
   );
   const innerClassNames = classNames(
     "animate-shimmer",
