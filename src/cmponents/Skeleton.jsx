@@ -1,5 +1,13 @@
 import classNames from "classnames";
 
-const Skeletion = ({ times }) => {};
+const Skeletion = ({ times }) => {
+  const boxes = Array(times)
+    .fill(0)
+    .map((_, i) => {
+      return <div key={i} />;
+    });
+
+  return boxes;
+};
 
 export default Skeletion;
