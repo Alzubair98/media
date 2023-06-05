@@ -1,8 +1,22 @@
 {
-    "users": [{
-        "id": 1, "name": "Myra"
-    }],
-    "albums": [],
-    "photos":[]
+  "users": [
+    {
+      "id": 1,
+      "name": "Myra"
+    },
+    {
+      "name": "Jorge Schowalter",
+      "id": 2
+    },
+    {
+      "name": "Donald Windler",
+      "id": 3
+    },
+    {
+      "name": "Geneva Deckow",
+      "id": 4
+    }
+  ],
+  "albums": [],
+  "photos": []
 }
-
