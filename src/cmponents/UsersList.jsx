@@ -24,12 +24,8 @@ const UsersList = () => {
     setIsCreatingUser(true);
     dispatch(addUser())
       .unwrap()
-      .catch((err) => {
-        setCreatingUserError(err);
-      })
-      .finally(() => {
-        setIsCreatingUser(false);
-      });
+      .catch((err) => setCreatingUserError(err))
+      .finally(() => setIsCreatingUser(false));
   };
 
   useEffect(() => {
