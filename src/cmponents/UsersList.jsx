@@ -22,12 +22,13 @@ const UsersList = () => {
     setIsLoadingUsers(true);
     dispatch(fetchUsers())
       .unwrap() // unwrap() will give us a promise
-      .then(() => {
-        setIsLoadingUsers(false);
+
+      .catch((err) => {
+        setLoadingUsersError(err);
       })
-      .catch(() => {
+      .finally(() => {
+        // will be called whatever happens
         setIsLoadingUsers(false);
-        setLoadingUsersError(true);
       });
   }, [dispatch]);
 
