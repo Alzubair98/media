@@ -1,12 +1,18 @@
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchUsers, addUser } from "../store";
+import Panel from "./Panel";
 import Button from "./Button";
 import Skeletion from "./Skeleton";
 
 const UsersList = () => {
+  // loading
   const [isLoadingUsers, setIsLoadingUsers] = useState(false);
   const [loadingUsersError, setLoadingUsersError] = useState(null);
+
+  // user creation
+  const [isCreatingUser, setIsCreatingUser] = useState(false);
+  const [creatingUserError, setCreatingUserError] = useState(null);
 
   const dispatch = useDispatch();
 
@@ -15,7 +21,15 @@ const UsersList = () => {
   });
 
   const handleUserAdd = () => {
-    dispatch(addUser());
+    setIsCreatingUser(true);
+    dispatch(addUser())
+      .unwrap()
+      .catch((err) => {
+        setCreatingUserError(err);
+      })
+      .finally(() => {
+        setIsCreatingUser(false);
+      });
   };
 
   useEffect(() => {
@@ -37,7 +51,7 @@ const UsersList = () => {
   }
 
   if (loadingUsersError) {
-    return <div>Error fetching data...</div>;
+    return <Panel>Error fetching data...</Panel>;
   }
 
   return (
