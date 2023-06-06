@@ -20,7 +20,15 @@ const UsersList = () => {
 
   useEffect(() => {
     setIsLoadingUsers(true);
-    dispatch(fetchUsers());
+    dispatch(fetchUsers())
+      .unwrap() // unwrap() will give us a promise
+      .then(() => {
+        setIsLoadingUsers(false);
+      })
+      .catch(() => {
+        setIsLoadingUsers(false);
+        setLoadingUsersError(true);
+      });
   }, [dispatch]);
 
   if (isLoadingUsers) {
