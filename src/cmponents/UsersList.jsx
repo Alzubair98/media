@@ -26,9 +26,9 @@ const UsersList = () => {
     doFetchUsers();
   }, [doFetchUsers]);
 
-  if (isLoadingUsers) {
-    return <Skeletion times={6} className="h-20 w-full mt-4" />;
-  }
+  // if (isLoadingUsers) {
+  //   return <Skeletion times={6} className="h-20 w-full mt-4" />;
+  // }
 
   if (loadingUsersError) {
     return <Panel>Error fetching data...</Panel>;
@@ -45,15 +45,21 @@ const UsersList = () => {
 
         {creatingUserError && "Error creating user..."}
       </div>
-      {data.map((user) => {
-        return (
-          <div key={user.id} className="mb-2 border rounded">
-            <div className="flex p-2 justify-between items-center cursor-pointer">
-              {user.name}
-            </div>
-          </div>
-        );
-      })}
+      {isLoadingUsers ? (
+        <Skeletion times={6} className="h-20 w-full mt-4" />
+      ) : (
+        <div>
+          {data.map((user) => {
+            return (
+              <div key={user.id} className="mb-2 border rounded">
+                <div className="flex p-2 justify-between items-center cursor-pointer">
+                  {user.name}
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      )}
     </div>
   );
 };
