@@ -39,8 +39,8 @@ const UsersList = () => {
       <div className="flex flex-row justify-between m-3">
         <h1 className="m-2 text-xl">Users</h1>
 
-        <Button onClick={handleUserAdd} primary>
-          {isCreatingUser ? "Creating User ..." : "+Add user"}
+        <Button loading={isCreatingUser} onClick={handleUserAdd} primary>
+          + Add User
         </Button>
 
         {creatingUserError && "Error creating user..."}
