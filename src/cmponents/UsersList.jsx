@@ -29,8 +29,6 @@ const UsersList = () => {
   // user creation
   const [doAddUser, isCreatingUser, creatingUserError] = useThunk(addUser);
 
-  const dispatch = useDispatch();
-
   const { data } = useSelector((state) => {
     return state.users;
   });
