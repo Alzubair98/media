@@ -4,7 +4,7 @@ import { fetchUsers, addUser } from "../store";
 import Panel from "./Panel";
 import Button from "./Button";
 import Skeletion from "./Skeleton";
-import useThunk from "../hooks/use-thunk";
+import { useThunk } from "../hooks/use-thunk";
 
 const UsersList = () => {
   // loading
