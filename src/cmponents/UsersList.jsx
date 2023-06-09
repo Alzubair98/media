@@ -30,9 +30,9 @@ const UsersList = () => {
   //   return <Skeletion times={6} className="h-20 w-full mt-4" />;
   // }
 
-  if (loadingUsersError) {
-    return <Panel>Error fetching data...</Panel>;
-  }
+  // if (loadingUsersError) {
+  //   return <Panel>Error fetching data...</Panel>;
+  // }
 
   return (
     <div>
@@ -45,6 +45,8 @@ const UsersList = () => {
 
         {creatingUserError && "Error creating user..."}
       </div>
+      {/* show error message */}
+      {loadingUsersError && <Panel>Error fetching data...</Panel>}
       {isLoadingUsers ? (
         <Skeletion times={6} className="h-20 w-full mt-4" />
       ) : (
