@@ -38,13 +38,11 @@ const UsersList = () => {
     <div>
       <div className="flex flex-row justify-between m-3">
         <h1 className="m-2 text-xl">Users</h1>
-        {isCreatingUser ? (
-          "Creating User ..."
-        ) : (
-          <Button onClick={handleUserAdd} primary>
-            + Add User
-          </Button>
-        )}
+
+        <Button onClick={handleUserAdd} primary>
+          {isCreatingUser ? "Creating User ..." : "+Add user"}
+        </Button>
+
         {creatingUserError && "Error creating user..."}
       </div>
       {data.map((user) => {
