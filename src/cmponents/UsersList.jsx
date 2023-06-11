@@ -1,13 +1,16 @@
 import { useEffect } from "react";
 import { useSelector } from "react-redux";
-import { fetchUsers, addUser } from "../store";
+import { fetchUsers, addUser, deleteUser } from "../store";
 import Panel from "./Panel";
 import Button from "./Button";
 import Skeletion from "./Skeleton";
 import { useThunk } from "../hooks/use-thunk";
 import { GoX } from "react-icons/go";
+import { useDispatch } from "react-redux";
 
 const UsersList = () => {
+  const dispatch = useDispatch();
+
   // loading
   const [doFetchUsers, isLoadingUsers, loadingUsersError] =
     useThunk(fetchUsers);
@@ -56,7 +59,7 @@ const UsersList = () => {
             return (
               <div key={user.id} className="mb-2 border rounded">
                 <div className="flex p-2 justify-between items-center cursor-pointer">
-                  <GoX onClick={() => console.log(user.id)} />
+                  <GoX onClick={() => dispatch(deleteUser(user.id))} />
                   {user.name}
                 </div>
               </div>

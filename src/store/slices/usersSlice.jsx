@@ -38,6 +38,22 @@ const usersSlice = createSlice({
       state.isLoading = false;
       state.error = action.error;
     });
+
+    // delete user
+
+    builder.addCase(deleteUser.pending, (state) => {
+      state.isLoading = true;
+    });
+
+    builder.addCase(deleteUser.fulfilled, (state, action) => {
+      state.isLoading = false;
+      console.log("builder", action.payload);
+    });
+
+    builder.addCase(deleteUser.rejected, (state, action) => {
+      state.isLoading = false;
+      state.error = action.error;
+    });
   },
 });
 
