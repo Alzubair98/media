@@ -59,7 +59,7 @@ const UsersList = () => {
             return (
               <div key={user.id} className="mb-2 border rounded">
                 <div className="flex p-2 justify-between items-center cursor-pointer">
-                  <GoX onClick={() => dispatch(deleteUser(user.id))} />
+                  <GoX onClick={() => dispatch(deleteUser(user))} />
                   {user.name}
                 </div>
               </div>
