@@ -7,6 +7,7 @@ import Skeletion from "./Skeleton";
 import { useThunk } from "../hooks/use-thunk";
 import { GoX } from "react-icons/go";
 import { useDispatch } from "react-redux";
+import UsersListItem from "./UsersListItem";
 
 const UsersList = () => {
   const dispatch = useDispatch();
@@ -56,14 +57,7 @@ const UsersList = () => {
       ) : (
         <div>
           {data.map((user) => {
-            return (
-              <div key={user.id} className="mb-2 border rounded">
-                <div className="flex p-2 justify-between items-center cursor-pointer">
-                  <GoX onClick={() => dispatch(deleteUser(user))} />
-                  {user.name}
-                </div>
-              </div>
-            );
+            return <UsersListItem user={user} key={user.id} />;
           })}
         </div>
       )}
