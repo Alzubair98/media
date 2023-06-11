@@ -13,10 +13,6 @@
       "id": 5
     },
     {
-      "name": "Mr. Noel Durgan PhD",
-      "id": 6
-    },
-    {
       "name": "Mr. Evan Leannon PhD",
       "id": 7
     },
@@ -27,6 +23,10 @@
     {
       "name": "Vera Leffler",
       "id": 9
+    },
+    {
+      "name": "Estelle Schulist",
+      "id": 10
     }
   ],
   "albums": [],

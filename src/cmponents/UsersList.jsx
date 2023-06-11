@@ -1,17 +1,14 @@
 import { useEffect } from "react";
 import { useSelector } from "react-redux";
-import { fetchUsers, addUser, deleteUser } from "../store";
+import { fetchUsers, addUser } from "../store";
 import Panel from "./Panel";
 import Button from "./Button";
 import Skeletion from "./Skeleton";
 import { useThunk } from "../hooks/use-thunk";
-import { GoX } from "react-icons/go";
-import { useDispatch } from "react-redux";
+
 import UsersListItem from "./UsersListItem";
 
 const UsersList = () => {
-  const dispatch = useDispatch();
-
   // loading
   const [doFetchUsers, isLoadingUsers, loadingUsersError] =
     useThunk(fetchUsers);
