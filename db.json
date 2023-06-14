@@ -1,14 +1,6 @@
 {
   "users": [
     {
-      "name": "Pat Legros",
-      "id": 6
-    },
-    {
-      "name": "Mr. Cary Lockman Jr.",
-      "id": 7
-    },
-    {
       "name": "Lena Prosacco",
       "id": 8
     },
@@ -19,6 +11,14 @@
     {
       "name": "Veronica Abbott Jr.",
       "id": 10
+    },
+    {
+      "name": "Scott Parker",
+      "id": 11
+    },
+    {
+      "name": "Ollie Block",
+      "id": 12
     }
   ],
   "albums": [],
