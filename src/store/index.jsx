@@ -8,6 +8,9 @@ export const store = configureStore({
     users: usersReducer,
     [albumsApi.reducerPath]: albumsApi.reducer,
   },
+  middleware: (getDefaultMiddleware) => {
+    return getDefaultMiddleware().concat(albumsApi.middleware);
+  },
 });
 
 export * from "./thunks/fetchUsers";
