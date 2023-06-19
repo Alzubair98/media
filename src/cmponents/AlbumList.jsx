@@ -1,10 +1,16 @@
-import { useFetchAlbumsQuery } from "../store";
+import { useFetchAlbumsQuery, useAddAlbumMutation } from "../store";
 import Skeletion from "./Skeleton";
 import ExpandablePanel from "./ExpandablePanel";
 import Button from "./Button";
 
 const Albumslist = ({ user }) => {
   const { data, error, isLoading } = useFetchAlbumsQuery(user);
+
+  const [addAlbum, results] = useAddAlbumMutation();
+
+  const handeAddAlbum = () => {
+    addAlbum(user);
+  };
 
   let content;
   if (isLoading) {
@@ -25,7 +31,8 @@ const Albumslist = ({ user }) => {
   return (
     <div>
       <div className="flex flex-row justify-between items-center mb-2">
-        abums for {user.name} <Button>Add Album</Button>
+        abums for {user.name}{" "}
+        <Button onClick={handeAddAlbum}>+ Add Album</Button>
       </div>
       <div>{content} </div>
     </div>

@@ -24,8 +24,18 @@
   "albums": [
     {
       "id": 1,
-      "title":"Hiking Trip",
+      "title": "Hiking Trip",
       "userId": 1
+    },
+    {
+      "userId": 1,
+      "title": "Generic Fresh Chicken",
+      "id": 2
+    },
+    {
+      "userId": 4,
+      "title": "Unbranded Wooden Tuna",
+      "id": 3
     }
   ],
   "photos": []
