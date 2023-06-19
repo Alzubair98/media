@@ -24,8 +24,10 @@ const Albumslist = ({ user }) => {
 
   return (
     <div>
-      <div>abums for {user.name}</div>
-      <div>{content}</div>
+      <div className="flex flex-row justify-between items-center mb-2">
+        abums for {user.name} <Button>Add Album</Button>
+      </div>
+      <div>{content} </div>
     </div>
   );
 };
