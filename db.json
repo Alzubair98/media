@@ -1,26 +1,32 @@
 {
   "users": [
     {
-      "name": "Lena Prosacco",
-      "id": 8
+      "name": "Theresa Bergnaum",
+      "id": 1
     },
     {
-      "name": "Manuel Purdy",
-      "id": 9
+      "name": "Kate Waters",
+      "id": 2
     },
     {
-      "name": "Veronica Abbott Jr.",
-      "id": 10
+      "name": "Jody Lebsack",
+      "id": 3
     },
     {
-      "name": "Scott Parker",
-      "id": 11
+      "name": "Erika Lebsack",
+      "id": 4
     },
     {
-      "name": "Ollie Block",
-      "id": 12
+      "name": "Alicia Metz-Morar III",
+      "id": 5
     }
   ],
-  "albums": [],
+  "albums": [
+    {
+      "id": 1,
+      "title":"Hiking Trip",
+      "userId": 1
+    }
+  ],
   "photos": []
 }
