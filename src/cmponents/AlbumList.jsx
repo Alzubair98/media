@@ -8,7 +8,7 @@ const Albumslist = ({ user }) => {
 
   let content;
   if (isLoading) {
-    content = <Skeletion times={3} />;
+    content = <Skeletion times={3} className="h-10 w-full mt-2" />;
   } else if (error) {
     content = <div> Error loading albums.</div>;
   } else {
