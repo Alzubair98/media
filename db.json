@@ -1,61 +1,47 @@
 {
   "users": [
     {
-      "name": "Theresa Bergnaum",
+      "name": "Heidi Wiegand",
       "id": 1
     },
     {
-      "name": "Kate Waters",
+      "name": "Ms. Heidi Daugherty",
       "id": 2
     },
     {
-      "name": "Jody Lebsack",
+      "name": "Cesar Christiansen V",
       "id": 3
     },
     {
-      "name": "Erika Lebsack",
+      "name": "Mr. Gary Harris",
       "id": 4
-    },
-    {
-      "name": "Alicia Metz-Morar III",
-      "id": 5
     }
   ],
   "albums": [
     {
-      "id": 1,
-      "title": "Hiking Trip",
-      "userId": 1
+      "userId": 1,
+      "title": "Bespoke Granite Fish",
+      "id": 1
     },
     {
       "userId": 1,
-      "title": "Generic Fresh Chicken",
+      "title": "Licensed Soft Sausages",
       "id": 2
     },
     {
-      "userId": 4,
-      "title": "Unbranded Wooden Tuna",
+      "userId": 2,
+      "title": "Rustic Wooden Cheese",
       "id": 3
     },
     {
       "userId": 1,
-      "title": "Awesome Wooden Pants",
+      "title": "Intelligent Concrete Bacon",
       "id": 4
     },
     {
       "userId": 1,
-      "title": "Tasty Rubber Computer",
+      "title": "Elegant Rubber Sausages",
       "id": 5
-    },
-    {
-      "userId": 3,
-      "title": "Awesome Soft Salad",
-      "id": 6
-    },
-    {
-      "userId": 5,
-      "title": "Incredible Frozen Mouse",
-      "id": 7
     }
   ],
   "photos": []
