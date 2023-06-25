@@ -41,6 +41,21 @@
       "userId": 1,
       "title": "Awesome Wooden Pants",
       "id": 4
+    },
+    {
+      "userId": 1,
+      "title": "Tasty Rubber Computer",
+      "id": 5
+    },
+    {
+      "userId": 3,
+      "title": "Awesome Soft Salad",
+      "id": 6
+    },
+    {
+      "userId": 5,
+      "title": "Incredible Frozen Mouse",
+      "id": 7
     }
   ],
   "photos": []
