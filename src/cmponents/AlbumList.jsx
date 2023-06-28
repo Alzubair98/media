@@ -2,6 +2,7 @@ import { useFetchAlbumsQuery, useAddAlbumMutation } from "../store";
 import Skeletion from "./Skeleton";
 import ExpandablePanel from "./ExpandablePanel";
 import Button from "./Button";
+import { GoTrashcan } from "react-icons/go";
 
 const Albumslist = ({ user }) => {
   const { data, error, isLoading } = useFetchAlbumsQuery(user);
@@ -19,7 +20,15 @@ const Albumslist = ({ user }) => {
     content = <div> Error loading albums.</div>;
   } else {
     content = data.map((album) => {
-      const header = <div>{album.title}</div>;
+      const header = (
+        <div className="flex flex-row justify-between items-center">
+          {" "}
+          <Button className="mr-3">
+            <GoTrashcan />
+          </Button>
+          {album.title}
+        </div>
+      );
       return (
         <ExpandablePanel key={album.id} header={header}>
           list of photos in the album
