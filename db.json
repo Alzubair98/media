@@ -11,6 +11,10 @@
     {
       "name": "Mr. Gary Harris",
       "id": 4
+    },
+    {
+      "name": "Sylvia Thompson",
+      "id": 5
     }
   ],
   "albums": [
@@ -53,6 +57,11 @@
       "userId": 3,
       "title": "Awesome Steel Salad",
       "id": 13
+    },
+    {
+      "userId": 2,
+      "title": "Handcrafted Concrete Fish",
+      "id": 14
     }
   ],
   "photos": []
