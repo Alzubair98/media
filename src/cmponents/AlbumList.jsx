@@ -30,8 +30,8 @@ const Albumslist = ({ user }) => {
 
   return (
     <div>
-      <div className="flex flex-row justify-between items-center mb-2">
-        abums for {user.name}{" "}
+      <div className=" m-2 flex flex-row justify-between items-center">
+        <h3 className="text-lg font-bold">albums for {user.name} </h3>
         <Button onClick={handeAddAlbum}>+ Add Album</Button>
       </div>
       <div>{content} </div>

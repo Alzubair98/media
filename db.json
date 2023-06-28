@@ -47,6 +47,11 @@
       "userId": 1,
       "title": "Bespoke Steel Shirt",
       "id": 6
+    },
+    {
+      "userId": 4,
+      "title": "Generic Concrete Pants",
+      "id": 7
     }
   ],
   "photos": []
