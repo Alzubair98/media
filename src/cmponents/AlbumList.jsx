@@ -8,7 +8,6 @@ const Albumslist = ({ user }) => {
 
   const [addAlbum, results] = useAddAlbumMutation();
 
-  console.log(results.status);
   const handeAddAlbum = () => {
     addAlbum(user);
   };
@@ -29,19 +28,11 @@ const Albumslist = ({ user }) => {
     });
   }
 
-  // to add spiner to add album button
-  let check;
-  if (results.status === "pending") {
-    check = true;
-  } else {
-    check = false;
-  }
-
   return (
     <div>
       <div className=" m-2 flex flex-row justify-between items-center">
         <h3 className="text-lg font-bold">albums for {user.name} </h3>
-        <Button loading={check} onClick={handeAddAlbum}>
+        <Button loading={results.isLoading} onClick={handeAddAlbum}>
           + Add Album
         </Button>
       </div>
