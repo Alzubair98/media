@@ -1,10 +1,6 @@
 {
   "users": [
     {
-      "name": "Heidi Wiegand",
-      "id": 1
-    },
-    {
       "name": "Ms. Heidi Daugherty",
       "id": 2
     },
@@ -19,39 +15,39 @@
   ],
   "albums": [
     {
-      "userId": 1,
-      "title": "Bespoke Granite Fish",
-      "id": 1
-    },
-    {
-      "userId": 1,
-      "title": "Licensed Soft Sausages",
-      "id": 2
-    },
-    {
       "userId": 2,
       "title": "Rustic Wooden Cheese",
       "id": 3
     },
     {
-      "userId": 1,
-      "title": "Intelligent Concrete Bacon",
-      "id": 4
-    },
-    {
-      "userId": 1,
-      "title": "Elegant Rubber Sausages",
-      "id": 5
-    },
-    {
-      "userId": 1,
-      "title": "Bespoke Steel Shirt",
-      "id": 6
-    },
-    {
       "userId": 4,
       "title": "Generic Concrete Pants",
       "id": 7
+    },
+    {
+      "userId": 2,
+      "title": "Incredible Soft Fish",
+      "id": 8
+    },
+    {
+      "userId": 2,
+      "title": "Elegant Wooden Shirt",
+      "id": 9
+    },
+    {
+      "userId": 3,
+      "title": "Sleek Rubber Pizza",
+      "id": 10
+    },
+    {
+      "userId": 3,
+      "title": "Handcrafted Soft Chips",
+      "id": 11
+    },
+    {
+      "userId": 3,
+      "title": "Refined Frozen Table",
+      "id": 12
     }
   ],
   "photos": []
