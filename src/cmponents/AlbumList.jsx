@@ -1,4 +1,8 @@
-import { useFetchAlbumsQuery, useAddAlbumMutation } from "../store";
+import {
+  useFetchAlbumsQuery,
+  useAddAlbumMutation,
+  useDeleteAlbumMutation,
+} from "../store";
 import Skeletion from "./Skeleton";
 import ExpandablePanel from "./ExpandablePanel";
 import Button from "./Button";
@@ -8,6 +12,10 @@ const Albumslist = ({ user }) => {
   const { data, error, isLoading } = useFetchAlbumsQuery(user);
 
   const [addAlbum, results] = useAddAlbumMutation();
+
+  const [deleteAlbum, result] = useDeleteAlbumMutation();
+
+  console.log(result);
 
   const handeAddAlbum = () => {
     addAlbum(user);
@@ -22,10 +30,7 @@ const Albumslist = ({ user }) => {
     content = data.map((album) => {
       const header = (
         <div className="flex flex-row justify-between items-center">
-          <Button
-            onClick={() => console.log("delete album", album.id)}
-            className="mr-3"
-          >
+          <Button onClick={() => deleteAlbum(album.id)} className="mr-3">
             <GoTrashcan />
           </Button>
           {album.title}
