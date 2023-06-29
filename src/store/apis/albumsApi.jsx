@@ -9,9 +9,9 @@ const albumsApi = createApi({
   endpoints(builder) {
     return {
       deleteAlbum: builder.mutation({
-        query: (user) => {
+        query: (album) => {
           return {
-            url: "/albums",
+            url: `/albums/${album.id}`,
             method: "DELETE",
           };
         },
