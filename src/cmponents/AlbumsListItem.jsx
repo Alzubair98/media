@@ -10,7 +10,7 @@ const AlbumListItem = ({ album }) => {
     <div className="flex flex-row justify-between items-center">
       <Button
         loading={results.isLoading}
-        onClick={() => deleteAlbum(album.id)}
+        onClick={() => deleteAlbum(album)}
         className="mr-3"
       >
         <GoTrashcan />
