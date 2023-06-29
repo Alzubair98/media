@@ -11,14 +11,13 @@
     {
       "name": "Mr. Gary Harris",
       "id": 4
+    },
+    {
+      "name": "Mrs. Jana Kub",
+      "id": 5
     }
   ],
   "albums": [
-    {
-      "userId": 2,
-      "title": "Rustic Wooden Cheese",
-      "id": 3
-    },
     {
       "userId": 2,
       "title": "Incredible Soft Fish",
@@ -38,6 +37,16 @@
       "userId": 3,
       "title": "Sleek Metal Bike",
       "id": 20
+    },
+    {
+      "userId": 5,
+      "title": "Electronic Fresh Shoes",
+      "id": 21
+    },
+    {
+      "userId": 5,
+      "title": "Handcrafted Metal Towels",
+      "id": 22
     }
   ],
   "photos": []
