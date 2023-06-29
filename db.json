@@ -19,16 +19,6 @@
   ],
   "albums": [
     {
-      "userId": 2,
-      "title": "Incredible Soft Fish",
-      "id": 8
-    },
-    {
-      "userId": 2,
-      "title": "Ergonomic Steel Soap",
-      "id": 16
-    },
-    {
       "userId": 4,
       "title": "Incredible Wooden Bike",
       "id": 18
@@ -47,6 +37,26 @@
       "userId": 5,
       "title": "Handcrafted Metal Towels",
       "id": 22
+    },
+    {
+      "userId": 2,
+      "title": "Intelligent Wooden Salad",
+      "id": 25
+    },
+    {
+      "userId": 2,
+      "title": "Bespoke Concrete Soap",
+      "id": 26
+    },
+    {
+      "userId": 2,
+      "title": "Tasty Steel Computer",
+      "id": 27
+    },
+    {
+      "userId": 2,
+      "title": "Elegant Plastic Bike",
+      "id": 28
     }
   ],
   "photos": []

@@ -20,7 +20,7 @@ const albumsApi = createApi({
     return {
       deleteAlbum: builder.mutation({
         invalidatesTags: (result, error, album) => {
-          return [{ type: "Album", album: album }];
+          return [{ type: "Album", id: album.id }];
         },
         query: (album) => {
           return {
@@ -32,7 +32,7 @@ const albumsApi = createApi({
 
       addAlbum: builder.mutation({
         invalidatesTags: (result, error, user) => {
-          return [{ type: "UserAlbums", id: user.id }];
+          return [{ type: "UsersAlbums", id: user.id }];
         },
         query: (user) => {
           return {
