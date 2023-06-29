@@ -15,8 +15,6 @@ const Albumslist = ({ user }) => {
 
   const [deleteAlbum, result] = useDeleteAlbumMutation();
 
-  console.log(result);
-
   const handeAddAlbum = () => {
     addAlbum(user);
   };
@@ -30,7 +28,11 @@ const Albumslist = ({ user }) => {
     content = data.map((album) => {
       const header = (
         <div className="flex flex-row justify-between items-center">
-          <Button onClick={() => deleteAlbum(album.id)} className="mr-3">
+          <Button
+            loading={result.isLoading}
+            onClick={() => deleteAlbum(album.id)}
+            className="mr-3"
+          >
             <GoTrashcan />
           </Button>
           {album.title}

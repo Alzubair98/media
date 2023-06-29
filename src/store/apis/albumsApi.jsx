@@ -25,7 +25,6 @@ const albumsApi = createApi({
         query: (album) => {
           return {
             url: `/albums/${album}`,
-
             method: "DELETE",
           };
         },
