@@ -22,8 +22,10 @@ const Albumslist = ({ user }) => {
     content = data.map((album) => {
       const header = (
         <div className="flex flex-row justify-between items-center">
-          {" "}
-          <Button className="mr-3">
+          <Button
+            onClick={() => console.log("delete album", album.id)}
+            className="mr-3"
+          >
             <GoTrashcan />
           </Button>
           {album.title}
