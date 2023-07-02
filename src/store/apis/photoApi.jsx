@@ -1,7 +1,7 @@
 import { faker } from "@faker-js/faker";
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/dist/query";
 
-const PhotosApi = createApi({
+const photosApi = createApi({
   reducerPath: "photos",
   baseQuery: fetchBaseQuery({
     baseUrl: "http://localhost:3005",
@@ -47,5 +47,5 @@ export const {
   useFetchPhotosQuery,
   useAddPhotoMutation,
   useRemovePhotoMutation,
-} = PhotosApi;
-export { PhotosApi };
+} = photosApi;
+export { photosApi };
