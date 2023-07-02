@@ -54,6 +54,16 @@
       "id": 1,
       "url": "trash",
       "albumId": 18
+    },
+    {
+      "albumId": 18,
+      "url": "https://loremflickr.com/150/150/abstract?lock=3067589093752832",
+      "id": 2
+    },
+    {
+      "albumId": 18,
+      "url": "https://loremflickr.com/150/150/abstract?lock=6456868920623104",
+      "id": 3
     }
   ]
 }
