@@ -26,15 +26,26 @@ const PhotosApi = createApi({
             method: "POST",
             body: {
               albumId: album.id,
-              url: faker.image,
+              url: faker.image.abstract(150, 150, true),
             },
           };
         },
       }),
-      removePhoto: builder.mutation({}),
+      removePhoto: builder.mutation({
+        query: (photo) => {
+          return {
+            url: `/photos/${photo.id}`,
+            method: "DELETE",
+          };
+        },
+      }),
     };
   },
 });
 
-export const { useFetchPhotosQuery } = PhotosApi;
+export const {
+  useFetchPhotosQuery,
+  useAddPhotoMutation,
+  useRemovePhotoMutation,
+} = PhotosApi;
 export { PhotosApi };
