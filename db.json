@@ -49,5 +49,11 @@
       "id": 29
     }
   ],
-  "photos": []
+  "photos": [
+    {
+    "id": 1,
+    "url": "trash",
+    "albumId": 18
+  }
+]
 }
