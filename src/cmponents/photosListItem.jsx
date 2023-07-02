@@ -1,4 +1,4 @@
-const PhotosListItems = () => {
+const PhotosListItems = ({ photo }) => {
   return "PhotosListItem";
 };
 
