@@ -5,16 +5,16 @@
       "id": 2
     },
     {
-      "name": "Cesar Christiansen V",
-      "id": 3
-    },
-    {
       "name": "Mr. Gary Harris",
       "id": 4
     },
     {
       "name": "Mrs. Jana Kub",
       "id": 5
+    },
+    {
+      "name": "Dr. Travis Zulauf DVM",
+      "id": 6
     }
   ],
   "albums": [
@@ -22,11 +22,6 @@
       "userId": 4,
       "title": "Incredible Wooden Bike",
       "id": 18
-    },
-    {
-      "userId": 3,
-      "title": "Sleek Metal Bike",
-      "id": 20
     },
     {
       "userId": 5,
@@ -51,9 +46,9 @@
   ],
   "photos": [
     {
-    "id": 1,
-    "url": "trash",
-    "albumId": 18
-  }
-]
+      "id": 1,
+      "url": "trash",
+      "albumId": 18
+    }
+  ]
 }
